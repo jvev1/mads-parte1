@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Resultado Par</title>
+</head>
+<body>
+    <h2>Resultado del Análisis</h2>
+    <p th:if="${esPar}">El número <b th:text="${numero}"></b> es <strong>PAR</strong>.</p>
+    <p th:unless="${esPar}">El número <b th:text="${numero}"></b> es <strong>IMPAR</strong>.</p>
+    
+    <a href="/comprobar-par">Probar otro número</a>
+</body>
+</html>
